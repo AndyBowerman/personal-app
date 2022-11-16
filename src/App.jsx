@@ -1,12 +1,10 @@
 import "./App.scss"
-import Weather from "./containers/Welcome/Weather/Weather"
-import Welcome from "./containers/Welcome/Welcome"
+import Home from "./pages/Home/Home"
 
 const App = () => {
   return (
     <div>
-     <Welcome />
-     <Weather />
+     <Home />
     </div>
   )
 }

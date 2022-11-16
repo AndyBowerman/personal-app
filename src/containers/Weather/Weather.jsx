@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import WeatherImg from "../../../components/Header/WeatherImg/WeatherImg";
-import WeatherInfo from "../../../components/Header/WeatherInfo/WeatherInfo";
+import WeatherImg from "../../components/WeatherImg/WeatherImg"
+import WeatherInfo from "../../components/WeatherInfo/WeatherInfo";
 import "./Weather.scss";
 
 const Weather = () => {

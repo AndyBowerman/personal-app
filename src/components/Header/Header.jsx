@@ -1,11 +1,7 @@
-import './Header.scss'
+import "./Header.scss";
 
-const Header = ({text}) => {
-  return (
-    <div>
-      <h1>{text}</h1>
-    </div>
-  )
-}
+const Header = ({ text }) => {
+  return <h1 className="header">{text}</h1>;
+};
 
-export default Header
+export default Header;

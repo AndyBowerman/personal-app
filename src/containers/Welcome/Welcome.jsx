@@ -29,7 +29,7 @@ const Welcome = () => {
   });
 
   return (
-    <div>
+    <div className="welcome">
       <Header text={message} />
     </div>
   );

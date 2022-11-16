@@ -1,5 +1,5 @@
 import './WeatherImg.scss';
-import sun from "../../../assets/sun.jpg"
+import sun from "../../assets/sun.jpg"
 
 const WeatherImg = () => {
   return (
