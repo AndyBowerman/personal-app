@@ -1,0 +1,15 @@
+.location-search {
+    margin: 0.5rem;
+
+    &__input {
+        font-size: 1.2rem;
+        width: 20rem;
+    }
+
+    &__submit {
+        font-size: 1.2rem;
+        background-color: #6699cc;
+        padding: 2px;
+        border: none;
+    }
+}
