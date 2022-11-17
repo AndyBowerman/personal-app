@@ -1,6 +1,7 @@
 import Card from '../../components/Card/Card';
 import Layout from '../../components/Layout/Layout';
 import Weather from '../../containers/Weather/Weather';
+import { Link } from 'react-router-dom';
 import './Home.scss';
 
 import toDoList from "../../assets/to-do-list.jpg";
@@ -10,7 +11,9 @@ const Home = () => {
   return (
     <Layout>
         <Weather />
-        <Card img={toDoList} title="Your To Do List" />
+        <Link to="/todolist" className='home__link'>
+          <Card img={toDoList} title="Your To Do List" />
+        </Link>
         <Card img={traffic} title="See Traffic"/>
     </Layout>
   )

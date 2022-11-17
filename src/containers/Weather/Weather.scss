@@ -8,6 +8,7 @@
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 0.5rem;
+    text-decoration: none;
 
     .weather__cover {
         height: 100%;
@@ -18,4 +19,9 @@
         z-index: 1;
         position: absolute;
     }
+}
+
+.weather__cover:hover {
+    opacity: 0.3;
+    transition: 500ms;
 }

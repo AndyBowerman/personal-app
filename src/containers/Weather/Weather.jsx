@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import WeatherImg from "../../components/WeatherImg/WeatherImg"
 import WeatherInfo from "../../components/WeatherInfo/WeatherInfo";
+import { Link } from 'react-router-dom';
 import "./Weather.scss";
 
 const Weather = () => {
@@ -23,11 +24,11 @@ const Weather = () => {
   });
 
   return (
-      <div className="weather">
+      <Link to="/weather" className="weather">
         <div className="weather__cover"></div>
         {!isLoading && <WeatherInfo forecast={forecast} />}
         {!isLoading && <WeatherImg weather={forecast.current.condition.text} />}
-      </div>
+      </Link>
   );
 };
 
