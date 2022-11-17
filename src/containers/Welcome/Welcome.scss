@@ -1,7 +1,12 @@
 .welcome {
     height: 100%;
-    margin: 1rem 3rem;
+    margin: 0 6rem;
     display: flex;
-    align-items: flex-end;
-    border-bottom: 0.2rem solid black;
+    align-items: center;
+
+    &__icon {
+        height: 6rem;
+        width: auto;
+        margin-right: 2rem;
+    }
 }

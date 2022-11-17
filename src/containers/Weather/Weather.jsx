@@ -26,7 +26,7 @@ const Weather = () => {
       <div className="weather">
         <div className="weather__cover"></div>
         {!isLoading && <WeatherInfo forecast={forecast} />}
-        <WeatherImg />
+        {!isLoading && <WeatherImg weather={forecast.current.condition.text} />}
       </div>
   );
 };

@@ -1,10 +1,12 @@
 import "./App.scss"
-import Home from "./pages/Home/Home"
+// import Home from "./pages/Home/Home"
+import WeatherApp from "./pages/WeatherApp/WeatherApp";
 
 const App = () => {
   return (
     <div>
-     <Home />
+     {/* <Home /> */}
+     <WeatherApp />
     </div>
   )
 }

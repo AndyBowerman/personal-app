@@ -1,0 +1,27 @@
+.weather-card {
+    width: 12rem;
+    height: 27rem;
+    margin: 0.35rem;
+    padding: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eff2f4;
+    border-radius: 0.5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    &__date {
+        font-size: 2rem;
+    }
+
+    &__list {
+        list-style: none;
+        font-size: 1.3rem;
+    }
+
+    &__condition {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}
