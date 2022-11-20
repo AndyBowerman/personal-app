@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/personal-app/static/css/main.302a5d97.css",
+    "main.js": "/personal-app/static/js/main.36fc2de8.js",
+    "static/js/787.d9312eb8.chunk.js": "/personal-app/static/js/787.d9312eb8.chunk.js",
+    "static/media/fog.jpg": "/personal-app/static/media/fog.3b9f93b8061216317ab9.jpg",
+    "static/media/light-snow.jpg": "/personal-app/static/media/light-snow.e1dab97215a78a77ca6f.jpg",
+    "static/media/to-do-list.jpg": "/personal-app/static/media/to-do-list.11ee88ea941aa52b130d.jpg",
+    "static/media/thunder.jpg": "/personal-app/static/media/thunder.2c3671108244da51978a.jpg",
+    "static/media/cloud.jpg": "/personal-app/static/media/cloud.90f735c09188f2e753f4.jpg",
+    "static/media/sun.jpg": "/personal-app/static/media/sun.27cab65b133af02f4fe0.jpg",
+    "static/media/light-rain.jpg": "/personal-app/static/media/light-rain.e9669af0d2d975a4a8af.jpg",
+    "static/media/heavy-snow.jpg": "/personal-app/static/media/heavy-snow.0183a2fa741df3a70a1f.jpg",
+    "static/media/heavy-rain.jpg": "/personal-app/static/media/heavy-rain.6a90b56cf7f5ecd50607.jpg",
+    "static/media/night.svg": "/personal-app/static/media/night.7e4ac3968887664a00b9f9b3f318f043.svg",
+    "static/media/afternoon.svg": "/personal-app/static/media/afternoon.a4108dc9716774631698181cabaa6af5.svg",
+    "static/media/evening.svg": "/personal-app/static/media/evening.37104e431501e895b38ce1b7da3cef4d.svg",
+    "static/media/morning.svg": "/personal-app/static/media/morning.caa7a71d02c7f2aa08a99cfebaedd1b8.svg",
+    "index.html": "/personal-app/index.html",
+    "main.302a5d97.css.map": "/personal-app/static/css/main.302a5d97.css.map",
+    "main.36fc2de8.js.map": "/personal-app/static/js/main.36fc2de8.js.map",
+    "787.d9312eb8.chunk.js.map": "/personal-app/static/js/787.d9312eb8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.302a5d97.css",
+    "static/js/main.36fc2de8.js"
+  ]
+}
