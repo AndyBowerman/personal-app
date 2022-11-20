@@ -12,7 +12,7 @@ const Weather = () => {
 
   const getForecast = async (position) => {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=cbfc2a5185254cceaff142413220911&q=${position.coords.latitude},${position.coords.longitude}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=cbfc2a5185254cceaff142413220911&q=${position.coords.latitude},${position.coords.longitude}&aqi=no`
     );
     const forecastData = await response.json();
     setForecast(forecastData);

@@ -17,11 +17,11 @@ const WeatherApp = () => {
     let response = "";
     if (!searchTerm) {
       response = await fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=cbfc2a5185254cceaff142413220911&q=${position.coords.latitude},${position.coords.longitude}&api=no&days=7`
+        `https://api.weatherapi.com/v1/forecast.json?key=cbfc2a5185254cceaff142413220911&q=${position.coords.latitude},${position.coords.longitude}&api=no&days=7`
       );
     } else {
       response = await fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=cbfc2a5185254cceaff142413220911&q=${searchTerm}&api=no&days=7`
+        `https://api.weatherapi.com/v1/forecast.json?key=cbfc2a5185254cceaff142413220911&q=${searchTerm}&api=no&days=7`
       );
     }
     const weatherData = await response.json();
