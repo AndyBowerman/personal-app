@@ -1,7 +1,7 @@
 .weather {
     height: 16.9rem;
     width: 28rem;
-    margin: 1rem;
+    margin: 1rem 0;
     position: relative;
     display: flex;
     justify-content: center;
@@ -25,3 +25,17 @@
     opacity: 0.3;
     transition: 500ms;
 }
+
+@media (max-width: 585px) {
+    .weather {
+      width: 22rem;
+      height: 13rem
+    }
+  }
+  
+  @media (max-width: 410px) {
+    .weather {
+      width: 17rem;
+      height: 13rem;
+    }
+  }

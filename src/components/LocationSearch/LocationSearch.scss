@@ -1,5 +1,5 @@
 .location-search {
-    margin: 0.5rem;
+    margin: 1.5rem;
 
     &__input {
         font-size: 1.2rem;
@@ -11,5 +11,16 @@
         background-color: #6699cc;
         padding: 2px;
         border: none;
+    }
+}
+
+@media (max-width: 440px) {
+    .location-search {
+        display: flex;
+        flex-direction: column;
+
+        &__input {
+            width: 14rem;
+        }
     }
 }

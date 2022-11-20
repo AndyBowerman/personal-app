@@ -39,3 +39,21 @@
   opacity: 0.3;
   transition: 500ms;
 }
+
+@media (max-width: 585px) {
+  .card {
+    width: 22rem;
+    height: 13rem
+  }
+}
+
+@media (max-width: 410px) {
+  .card {
+    width: 17rem;
+    height: 13rem;
+
+    &__title {
+      font-size: 2.5rem;
+    }
+  }
+}

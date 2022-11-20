@@ -10,3 +10,13 @@
         margin-right: 2rem;
     }
 }
+
+@media(max-width: 390px) {
+    .welcome {
+        text-align: center;
+
+        &__icon {
+            display: none;
+        }
+    }
+}

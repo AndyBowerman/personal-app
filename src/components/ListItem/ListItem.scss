@@ -22,3 +22,21 @@
         color: #ffffff;
     }
 }
+
+@media (max-width: 800px) {
+    .list-item {
+        width: 32rem;
+    }
+}
+
+@media (max-width: 585px) {
+    .list-item {
+        width: 23rem;
+    }
+}
+
+@media (max-width: 440px) {
+    .list-item {
+        width: 15.5rem;
+    }
+}
