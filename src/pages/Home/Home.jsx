@@ -14,7 +14,6 @@ const Home = () => {
         <Link to="/todolist" className='home__link'>
           <Card img={toDoList} title="Your To Do List" />
         </Link>
-        <Card img={traffic} title="See Traffic"/>
     </Layout>
   )
 }

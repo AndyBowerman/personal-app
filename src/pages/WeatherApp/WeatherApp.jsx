@@ -3,6 +3,7 @@ import Layout from "../../components/Layout/Layout";
 import WeatherForecast from "../../containers/WeatherForecast/WeatherForecast";
 import { useState, useEffect } from "react";
 import LocationSearch from "../../components/LocationSearch/LocationSearch";
+import LocationNotFound from "../../components/LocationNotFound/LocationNotFound";
 
 const WeatherApp = () => {
   const [forecast, setForecast] = useState("");
@@ -41,9 +42,9 @@ const WeatherApp = () => {
   return (
     <Layout>
       <div className="weather-app">
-        {!isLoading && <h4>{`${forecast.location.name}, ${forecast.location.country}`}</h4>}
+        {!isLoading && !forecast.error && <h4>{`${forecast.location.name}, ${forecast.location.country}`}</h4>}
         <LocationSearch handleSubmit={getSearchTerm} />
-        {!isLoading && <WeatherForecast forecast={forecast.forecast.forecastday} />}
+        {!isLoading && !forecast.error ? <WeatherForecast forecast={forecast.forecast.forecastday} /> : <LocationNotFound />}
       </div>
     </Layout>
   );

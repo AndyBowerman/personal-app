@@ -13,7 +13,6 @@ const Navbar = () => {
       <Link to="/todolist" className="navbar__link">
         <li className="navbar__item">To Do List</li>
       </Link>
-        <li className="navbar__item">Traffic</li>
     </ul>
   )
 }
