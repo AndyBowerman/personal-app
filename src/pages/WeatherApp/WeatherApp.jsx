@@ -4,6 +4,7 @@ import WeatherForecast from "../../containers/WeatherForecast/WeatherForecast";
 import { useState, useEffect } from "react";
 import LocationSearch from "../../components/LocationSearch/LocationSearch";
 import LocationNotFound from "../../components/LocationNotFound/LocationNotFound";
+import { api_key } from "../../config";
 
 const WeatherApp = () => {
   const [forecast, setForecast] = useState("");
@@ -17,11 +18,11 @@ const WeatherApp = () => {
     let response = "";
     if (!searchTerm) {
       response = await fetch(
-        `https://api.weatherapi.com/v1/forecast.json?key=cbfc2a5185254cceaff142413220911&q=${position.coords.latitude},${position.coords.longitude}&api=no&days=7`
+        `https://api.weatherapi.com/v1/forecast.json?key=${api_key}=${position.coords.latitude},${position.coords.longitude}&api=no&days=7`
       );
     } else {
       response = await fetch(
-        `https://api.weatherapi.com/v1/forecast.json?key=cbfc2a5185254cceaff142413220911&q=${searchTerm}&api=no&days=7`
+        `https://api.weatherapi.com/v1/forecast.json?key=${api_key}=${searchTerm}&api=no&days=7`
       );
     }
     const weatherData = await response.json();

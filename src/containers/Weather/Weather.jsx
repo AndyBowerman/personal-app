@@ -3,6 +3,7 @@ import WeatherImg from "../../components/WeatherImg/WeatherImg"
 import WeatherInfo from "../../components/WeatherInfo/WeatherInfo";
 import { Link } from 'react-router-dom';
 import "./Weather.scss";
+import { api_key } from "../../config";
 
 const Weather = () => {
   const [forecast, setForecast] = useState("");
@@ -12,7 +13,7 @@ const Weather = () => {
 
   const getForecast = async (position) => {
     const response = await fetch(
-      `https://api.weatherapi.com/v1/current.json?key=cbfc2a5185254cceaff142413220911&q=${position.coords.latitude},${position.coords.longitude}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=${api_key}=${position.coords.latitude},${position.coords.longitude}&aqi=no`
     );
     const forecastData = await response.json();
     setForecast(forecastData);
@@ -21,13 +22,13 @@ const Weather = () => {
 
   useEffect(() => {
     getLocation();
-  });
+  }, []);
 
   return (
       <Link to="/weather" className="weather">
         <div className="weather__cover"></div>
-        {!isLoading && <WeatherInfo forecast={forecast} />}
-        {!isLoading && <WeatherImg weather={forecast.current.condition.text} />}
+        {!isLoading && <WeatherInfo forecast={forecast} apiSuccess={Object.keys(forecast).indexOf("error") === -1} />}
+        {!isLoading && <WeatherImg forecast={forecast} />}
       </Link>
   );
 };

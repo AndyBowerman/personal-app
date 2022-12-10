@@ -9,9 +9,11 @@ import lightRain from "../../assets/light-rain.jpg";
 import lightSnow from "../../assets/light-snow.jpg";
 import thunder from "../../assets/thunder.jpg";
 
-const WeatherImg = ({ weather }) => {
+const WeatherImg = ({ forecast }) => {
   const [weatherImg, setWeatherImg] = useState(sun);
-
+  const weatherArr = Object.keys(forecast);
+  const weather = weatherArr.indexOf("error") >= 0 ? "Fog" : forecast.current.condition.text;
+  
   const selectImage = () => {
     switch (weather) {
       case "Sunny":
@@ -87,6 +89,7 @@ const WeatherImg = ({ weather }) => {
       case "Moderate or heavy snow with thunder":
         setWeatherImg(thunder);
         break;
+      default: setWeatherImg(sun);  
     }
   };
 
