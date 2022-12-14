@@ -18,11 +18,11 @@ const WeatherApp = () => {
     let response = "";
     if (!searchTerm) {
       response = await fetch(
-        `https://api.weatherapi.com/v1/forecast.json?key=${api_key}=${position.coords.latitude},${position.coords.longitude}&api=no&days=7`
+        `https://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${position.coords.latitude},${position.coords.longitude}&days=5`
       );
     } else {
       response = await fetch(
-        `https://api.weatherapi.com/v1/forecast.json?key=${api_key}=${searchTerm}&api=no&days=7`
+        `https://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${searchTerm}&days=5`
       );
     }
     const weatherData = await response.json();
